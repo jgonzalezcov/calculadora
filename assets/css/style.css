@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Quintessential&display=swap');
+* {
+  padding: 0%;
+  margin: 0%;
+}
+body {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+}
+
+.tecla {
+  background-color: black;
+  border: 1px solid #fff;
+  color: #008000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 5em;
+  height: 5em;
+}
+.tecla2 {
+  background-color: black;
+  border: 1px solid #fff;
+  color: #008000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10em;
+  height: 5em;
+}
+.visor {
+  grid-area: visor;
+  width: 100%;
+  height: 5em;
+  background-color: rgb(128, 172, 147);
+}
+
+.visor h1 {
+  font-size: 4em;
+  text-align: right;
+}
+
+.cero {
+  grid-area: cero;
+}
+.uno {
+  grid-area: uno;
+}
+.dos {
+  grid-area: dos;
+}
+.tres {
+  grid-area: tres;
+}
+.cuatro {
+  grid-area: cuatro;
+}
+.cinco {
+  grid-area: cinco;
+}
+.seis {
+  grid-area: seis;
+}
+.siete {
+  grid-area: siete;
+}
+.ocho {
+  grid-area: ocho;
+}
+.nueve {
+  grid-area: nueve;
+}
+.division {
+  grid-area: div;
+}
+.multipica {
+  grid-area: mult;
+}
+.suma {
+  grid-area: suma;
+}
+.resta {
+  grid-area: resta;
+}
+.igual {
+  grid-area: igual;
+}
+.punto {
+  grid-area: punt;
+}
+.acc {
+  grid-area: acc;
+}
+.dob_cero {
+  grid-area: dob_cero;
+}
+.calculadora {
+  border: 10px solid #008000;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    'visor visor visor visor'
+    'siete ocho nueve div'
+    'cuatro cinco seis mult'
+    'uno dos tres resta'
+    'cero dob_cero punt suma'
+    'acc acc igual igual';
+}
+
+.contenedor_calc {
+  margin-top: 10em;
+}
