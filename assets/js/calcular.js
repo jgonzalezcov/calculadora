@@ -29,9 +29,8 @@ function operacion(signo_oper) {
   num_in = ''
 }
 function operacion_especial(val) {
-  console.log(val)
   limpiar()
-  oper = 'cos'
+  oper = val
 }
 
 function resultado() {
@@ -53,7 +52,11 @@ function resultado() {
       desborde()
       break
     case 'cos':
-      num_guard = Math.cos(Number(num_in) * (Math.PI / 180))
+      if (Number(num_in) == 90 || Number(num_in) == 270) {
+        num_guard = 0
+      } else {
+        num_guard = Math.cos(Number(num_in) * (Math.PI / 180))
+      }
       desborde()
       break
   }
