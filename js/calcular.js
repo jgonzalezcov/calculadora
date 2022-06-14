@@ -9,6 +9,7 @@ function concat_num(tec) {
   if (oper == 'reset') {
     num_in = ''
     num_guard = 0
+    oper = ''
   }
   num_in = num_in + tec
   visor.innerHTML = num_in
