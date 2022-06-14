@@ -28,6 +28,11 @@ function operacion(signo_oper) {
   oper = signo_oper
   num_in = ''
 }
+function operacion_especial(val) {
+  console.log(val)
+  limpiar()
+  oper = 'cos'
+}
 
 function resultado() {
   switch (oper) {
@@ -45,6 +50,10 @@ function resultado() {
       break
     case '/':
       num_guard = num_guard / Number(num_in)
+      desborde()
+      break
+    case 'cos':
+      num_guard = Math.cos(Number(num_in) * (Math.PI / 180))
       desborde()
       break
   }

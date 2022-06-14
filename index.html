@@ -36,9 +36,15 @@
         <div class="multipica tecla" onclick="operacion('*'); ">*</div>
         <div class="suma tecla" onclick="operacion('+'); ">+</div>
         <div class="resta tecla" onclick="operacion('-'); ">-</div>
+        <div
+          class="cos tecla"
+          onclick="operacion_especial('cos'); operacion('cos');"
+        >
+          Cos
+        </div>
         <div class="punto tecla" onclick="concat_num('.'); ">.</div>
         <div class="igual tecla2" onclick="resultado(); ">=</div>
-        <div class="acc tecla2" onclick="limpiar(); ">AC</div>
+        <div class="acc tecla" onclick="limpiar(); ">AC</div>
         <div class="dob_cero tecla" onclick="concat_num('00'); ">00</div>
       </div>
     </div>
