@@ -95,6 +95,9 @@ body {
 .dob_cero {
   grid-area: dob_cero;
 }
+.cos {
+  grid-area: cos;
+}
 .calculadora {
   border: 10px solid #008000;
   border-radius: 10px;
@@ -106,7 +109,7 @@ body {
     'cuatro cinco seis mult'
     'uno dos tres resta'
     'cero dob_cero punt suma'
-    'acc acc igual igual';
+    'cos acc igual igual';
 }
 
 .contenedor_calc {
